@@ -33,3 +33,7 @@
   font-size: 14px;
   margin-left: -10px;
 }
+.nav-bar h5 {
+  font-size: 2.5vmax;
+  text-decoration: none;
+}
