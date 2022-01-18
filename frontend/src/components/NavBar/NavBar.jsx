@@ -17,9 +17,7 @@ const bagIcon = (
 );
 
 const NavBar = () => {
-  const cartTotalQuantity = useSelector(
-    (state) => state.cart.cartTotalQuantity
-  );
+  const { cartTotalQuantity } = useSelector((state) => state.cart);
   return (
     <div className="nav-bar">
       <Link to="/">

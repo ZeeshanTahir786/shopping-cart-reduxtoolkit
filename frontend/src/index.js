@@ -5,8 +5,10 @@ import App from "./App";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
 import { fetchProducts } from "./features/productSlice";
+import { getTotals } from "./features/cartSlice";
 
 store.dispatch(fetchProducts());
+store.dispatch(getTotals());
 
 ReactDOM.render(
   <React.StrictMode>
