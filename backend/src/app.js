@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const products = require("../backend/Products/Products");
+const products = require("../Products/Products");
 
 const port = process.env.PORT || 5000;
 const app = express();
