@@ -26,6 +26,7 @@ const Cart = () => {
       <h2>Shopping Cart</h2>
       {cart.cartItems.length === 0 ? (
         <div className="cart-empty">
+          <h2>New Arrival</h2>
           <p>Your cart is empty</p>
           <div className="start-shoping">
             <Link to="/">
@@ -73,6 +74,7 @@ const Cart = () => {
                 <div className="amount">{cart.cartTotalAmount}</div>
               </div>
               <p>Taxes and shipping calculated at checkout </p>
+              <button>Check out</button>
               <div className="continue-shoping">
                 <Link to="/">
                   {arrowLeft}
